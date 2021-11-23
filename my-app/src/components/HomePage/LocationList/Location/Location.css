@@ -1,0 +1,22 @@
+.Location{
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.LocationImg{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.LocationName{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}

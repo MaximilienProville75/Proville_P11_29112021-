@@ -1,0 +1,9 @@
+.LocationList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4.4rem 10%;
+    max-width: 1240px;
+    border-radius: 25px;
+    background: #F7F7F7;
+}

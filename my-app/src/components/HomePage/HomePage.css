@@ -1,0 +1,23 @@
+.BannerHero{
+    max-width: 1240px;
+    max-height: 223px;
+}
+
+.BannerHeroImg{
+    max-width: 1240px;
+    max-height: 223px;
+}
+
+.BannerHeroText{
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: left;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+}

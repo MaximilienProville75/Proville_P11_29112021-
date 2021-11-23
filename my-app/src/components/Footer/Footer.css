@@ -1,0 +1,24 @@
+.Footer{
+    height: 209px;
+    width: 1440px;
+    background: #000000;
+}
+
+.FooterLogo{
+    height: 30.953615188598633px;
+    width: 26.70753288269043px;
+}
+
+.FooterCopyright{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}

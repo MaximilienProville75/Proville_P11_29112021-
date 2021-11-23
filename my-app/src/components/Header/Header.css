@@ -1,0 +1,22 @@
+.Header{
+    display: flex;
+    max-width: 1240px;
+    max-height: 68px;
+}
+
+.HeaderLogo{
+    background: #FF6060;
+    height: 68px;
+    width: 210px;
+}
+
+.Header_Ul{
+    display: flex;
+}
+.Header_Ul ul{
+    text-decoration: none;
+}
+
+.HeaderLi li{
+    text-decoration: none;
+}
