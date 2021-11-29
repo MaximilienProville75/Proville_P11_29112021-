@@ -1,0 +1,45 @@
+.ErrorPage{
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 97px;
+    
+}
+
+.ErrorMessage{
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.ErrorBig{
+    color: #FF6060;
+    font-weight: bold;
+font-size: 200px;
+margin-top: -75px;
+}
+
+.ErrorBig h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ErrorSmall{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -200px;
+    color: #FF6060;
+}
+
+.ReturnHome{
+    color: #FF6060;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.ReturnHome:hover{
+    text-decoration:underline 3px #FF6060;
+}

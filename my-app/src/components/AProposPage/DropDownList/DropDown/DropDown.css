@@ -1,0 +1,33 @@
+.DropDown{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+
+.DropDownTitle{
+    background-color: #FF6060;
+    border-radius: 5px;
+    height: 32px;
+    color: white;
+    font-style: normal;
+font-weight: 500;
+font-size: 20px;
+}
+
+.DropDownTitle p{
+    margin-left: 10px;
+    padding-top: 7px;
+}
+
+.DropDownDescription{
+    background-color:#F7F7F7;
+    color: #FF6060;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: -20px;
+    
+}
+
+.DropDownDescription p{
+    padding: 15px;
+    
+}

@@ -3,7 +3,11 @@ import "./HomePage.css";
 
 import { Header } from "../Header/Header";
 import { LocationList } from "./LocationList/LocationList";
-import { Footer } from "../Footer/Footer";
+import { Footer } from "../Footer/Footer.js";
+
+import bannerImg from "../../bannerhero.svg";
+
+import { locations } from "../../location.js";
 
 class HomePage extends React.Component {
   render() {
@@ -11,9 +15,9 @@ class HomePage extends React.Component {
       <>
         <Header />
         <div className="BannerHero">
-          <img className="BannerHeroImg" src="my-app/src/IMG.png" alt="" />
-          <p className="BannerHeroText">Chez vous, partout et ailleurs</p>
+          <img className="BannerHeroImg" src={bannerImg} alt="CliffsSeaside" />
         </div>
+
         <LocationList locations={locations} />
         <Footer />
       </>

@@ -1,8 +1,8 @@
 import React from "react";
-import "LocationList.css";
+import "./LocationList.css";
 import Location from "./Location/Location";
 
-class LocationList extends React.Component {
+export class LocationList extends React.Component {
   render() {
     return (
       <div className="LocationList">
@@ -13,5 +13,3 @@ class LocationList extends React.Component {
     );
   }
 }
-
-export default LocationList;

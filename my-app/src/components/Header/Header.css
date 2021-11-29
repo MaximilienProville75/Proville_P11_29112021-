@@ -2,21 +2,40 @@
     display: flex;
     max-width: 1240px;
     max-height: 68px;
+    flex-direction: row;
+justify-content: space-between;
+margin: auto;
+margin-top: 50px;
 }
 
 .HeaderLogo{
-    background: #FF6060;
     height: 68px;
     width: 210px;
 }
 
 .Header_Ul{
-    display: flex;
+    width: 280px
 }
 .Header_Ul ul{
-    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
 }
 
-.HeaderLi li{
+.HeaderLi{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF6060 !important;
+}
+
+.HeaderLi a{
     text-decoration: none;
+    color: #FF6060;
+}
+
+.HeaderLi a:hover{
+    border-bottom: 3px solid #FF6060;
 }

@@ -1,12 +1,13 @@
 import React from "react";
 import "./Header.css";
+import { ReactComponent as Logo } from "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/logo.svg";
 
-class Header extends React.Component {
+export class Header extends React.Component {
   render() {
     return (
       <div className="Header">
         <div className="HeaderLogo">
-          <img src="my-app/public/logo.svg" alt="" />
+          <Logo />
         </div>
         <div className="Header_Ul">
           <ul className="HeaderUl">
@@ -14,7 +15,9 @@ class Header extends React.Component {
               <a href="https://www.youtube.com/watch?v=kMiBrqV_4FA">Accueil</a>
             </li>
             <li className="HeaderLi">
-              <a href="https://www.youtube.com/watch?v=kMiBrqV_4FA">A propos</a>
+              <a href="my-app/src/components/AProposPage/AProposPage.js">
+                A propos
+              </a>
             </li>
           </ul>
         </div>
@@ -22,5 +25,3 @@ class Header extends React.Component {
     );
   }
 }
-
-export default Header;
