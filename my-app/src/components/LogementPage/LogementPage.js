@@ -1,5 +1,5 @@
 import React from "react";
-import "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/components/LogementPage/Description/Description.css";
+import "./Description/Description.css";
 
 import { Header } from "../Header/Header";
 
@@ -11,21 +11,46 @@ import { Equipements } from "./Equipements/Equipements";
 
 import { Footer } from "../Footer/Footer";
 
-import { locations } from "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/location.js";
+// import {
+//   locations,
+//   getInvoice,
+// } from "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/location.js";
 
-export default class LogementPage extends React.Component {
+import { useParams } from "react-router-dom";
+
+const withRouter = (WrappedComponent) => (props) => {
+  const params = useParams();
+  return <WrappedComponent {...props} params={params} />;
+};
+
+class LogementPage extends React.Component {
+  componentDidMount() {
+    // fetch tes donnees
+    //
+  }
+
   render() {
+    // if (isNotValid) {
+    //   return <Navigate to
+    // }
+
+    const actualUrlId = this.props.params.locationId;
+    console.log(actualUrlId);
+
     return (
       <>
-        <Header />
-        <PhotoGallery locations={locations} />
-        <LogementMain locations={locations} />
+        {/* <Header />
+        <PhotoGallery locations={this.props.location.invoiceId} />
+        <LogementMain locations={this.props.location.invoiceId} />
         <div className="DescAndEquipment">
-          <Description locations={locations} />
-          <Equipements locations={locations} />
+          <Description locations={this.props.location.invoiceId} />
+          <Equipements locations={this.props.location.invoiceId} />
         </div>
-        <Footer />
+        <Footer /> */}
+        <div>blbllblbl</div>
       </>
     );
   }
 }
+
+export default withRouter(LogementPage);

@@ -1,7 +1,7 @@
 import React from "react";
 import "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/components/LogementPage/Description/Description.css";
 
-export default class Description extends React.Component {
+export class Description extends React.Component {
   render() {
     return (
       <div className="Description">

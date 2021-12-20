@@ -2,7 +2,7 @@ import React from "react";
 import "./HomePage.css";
 
 import { Header } from "../Header/Header";
-import { LocationList } from "./LocationList/LocationList";
+import { LocationList } from "./LocationList/LocationList.js";
 import { Footer } from "../Footer/Footer.js";
 
 import bannerImg from "../../bannerhero.svg";

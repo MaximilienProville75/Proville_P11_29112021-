@@ -4,12 +4,12 @@ import "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kas
 import { LeftController } from "./PhotoGalleryControler/LeftController/LeftController";
 import { RightController } from "./PhotoGalleryControler/RightController/RightController";
 
-export default class PhotoGallery extends React.Component {
+export class PhotoGallery extends React.Component {
   displayImg() {}
 
   retrieveImgArr() {}
 
   render() {
-    return;
+    return <p>Balbalbalbal</p>;
   }
 }

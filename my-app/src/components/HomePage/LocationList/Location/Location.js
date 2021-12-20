@@ -4,14 +4,17 @@ import "./Location.css";
 class Location extends React.Component {
   render() {
     return (
-      <div className="Location" data-title={this.props.location.id}>
-        <div className="LocationImg">
-          <img src={this.props.location.cover} alt="location" />
+      <>
+        <div className="Location" data-title={this.props.location.id}>
+          <div className="LocationImg">
+            <img src={this.props.location.cover} alt="location" />
+          </div>
+          <div className="gradientImg"></div>
+          <div className="LocationName">
+            <p>{this.props.location.title}</p>
+          </div>
         </div>
-        <div className="LocationName">
-          <p>{this.props.location.title}</p>
-        </div>
-      </div>
+      </>
     );
   }
 }

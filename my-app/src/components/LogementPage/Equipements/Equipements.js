@@ -1,7 +1,7 @@
 import React from "react";
-import "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/components/LogementPage/Equipements/Equipements.css";
+import "./Equipements.css";
 
-export default class Equipements extends React.Component {
+export class Equipements extends React.Component {
   render() {
     return (
       <div className="Equipements">

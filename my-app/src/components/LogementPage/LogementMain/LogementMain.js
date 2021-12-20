@@ -4,11 +4,11 @@ import "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kas
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaStar } from "@fortawesome/free-solid-svg-icons";
 
-export default class LogementMain extends React.Component {
+export class LogementMain extends React.Component {
   render() {
-    let MainRate = this.props.locations.ratings;
-    let intMainRate = parseInt(MainRate);
-    let StarNb = intMainRate * <FontAwesomeIcon icon={FaStar} />;
+    // let MainRate = this.props.locations.ratings;
+    // let intMainRate = parseInt(MainRate);
+    // let StarNb = intMainRate * <FontAwesomeIcon icon={FaStar} />;
 
     return (
       <div className="LogementMain">
@@ -28,12 +28,12 @@ export default class LogementMain extends React.Component {
         <div className="TagRating">
           <div className="TagList">
             <ul>
-              {this.props.locations.tags.forEach((tag) => {
+              {this.props.locations.tags.map((tag) => {
                 return <li>{tag}</li>;
               })}
             </ul>
           </div>
-          <div className="StarRatings">{StarNb}</div>
+          {/* <div className="StarRatings">{StarNb}</div> */}
         </div>
       </div>
     );

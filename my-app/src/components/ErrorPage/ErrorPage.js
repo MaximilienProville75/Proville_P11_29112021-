@@ -3,7 +3,7 @@ import React from "react";
 import { Header } from "../Header/Header";
 import { Footer } from "../Footer/Footer";
 
-import "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/components/ErrorPage/ErrorPage.css";
+import "../ErrorPage/ErrorPage.css";
 
 export default class ErrorPage extends React.Component {
   render() {
