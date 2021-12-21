@@ -1,9 +1,10 @@
 .pictureImg img{
     max-width: 1240px;
-    height: 410px;
+    max-height: 410px;
     width: 100%;
     object-fit: cover;
     border-radius: 25px;
+    box-shadow: 10px 10px 16px 0px rgb(179, 165, 165);
 }
 
 .pictureImg{

@@ -12,7 +12,7 @@ export class LocationList extends React.Component {
         {this.props.locations.map((location) => {
           return (
             <Link to={`/logement/${location.id}`} key={location.id}>
-              <Location location={location} />;
+              <Location location={location} />
             </Link>
           );
         })}

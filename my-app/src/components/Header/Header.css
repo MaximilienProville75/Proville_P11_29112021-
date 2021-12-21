@@ -15,7 +15,8 @@ margin-top: 50px;
 }
 
 .Header_Ul{
-    width: 280px
+    width: 280px;
+    z-index: 10;
 }
 .Header_Ul ul{
     list-style-type: none;
