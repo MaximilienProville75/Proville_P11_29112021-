@@ -1,0 +1,26 @@
+.pictureImg img{
+    max-width: 1240px;
+    height: 410px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.pictureImg{
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 1240px;
+    position: relative;
+    margin-top: -50px;
+}
+
+.controllerS {
+    display: flex;
+    justify-content: space-between;
+    top: 261px;
+    position: relative;
+    padding: 0px 10px 0px 10px;
+}

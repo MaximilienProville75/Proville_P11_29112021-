@@ -23,6 +23,7 @@ ReactDOM.render(
           <Route path=":locationId" element={<LogementPage />} />
         </Route>
         <Route path="*" element={<ErrorPage />} />
+        <Route path="/error404" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

@@ -1,0 +1,6 @@
+.DescAndEquipment {
+    display: flex;
+    max-width: 1240px;
+    margin: auto;
+    justify-content: space-between;
+}

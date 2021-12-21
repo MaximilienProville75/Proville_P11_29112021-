@@ -2,19 +2,20 @@ import React from "react";
 import "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/components/LogementPage/LogementMain/LogementMain.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FaStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { farStar } from "@fortawesome/free-solid-svg-icons";
 
 export class LogementMain extends React.Component {
   render() {
-    // let MainRate = this.props.locations.ratings;
-    // let intMainRate = parseInt(MainRate);
-    // let StarNb = intMainRate * <FontAwesomeIcon icon={FaStar} />;
+    let MainRate = this.props.locations.rating;
+    let intMainRate = parseInt(MainRate);
+    let remain = 5 - intMainRate;
 
     return (
       <div className="LogementMain">
         <div className="MainTitleAndProfil">
           <div className="TitleLocation">
-            <p>{this.props.locations.title}</p>
+            <h1>{this.props.locations.title}</h1>
             <p>{this.props.locations.location}</p>
           </div>
           <div className="HostProfil">
@@ -33,7 +34,14 @@ export class LogementMain extends React.Component {
               })}
             </ul>
           </div>
-          {/* <div className="StarRatings">{StarNb}</div> */}
+          <div className="StarRatings">
+            {[...Array(intMainRate)].map((el, index) => (
+              <FontAwesomeIcon icon={faStar} className="star" size="lg" />
+            ))}
+            {[...Array(remain)].map((el, index) => (
+              <FontAwesomeIcon icon={faStar} className="emptyStar" size="lg" />
+            ))}
+          </div>
         </div>
       </div>
     );

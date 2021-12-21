@@ -1,5 +1,5 @@
 import React from "react";
-import "./Description/Description.css";
+import "../LogementPage/LogementPage.css";
 
 import { Header } from "../Header/Header";
 
@@ -10,11 +10,8 @@ import { Description } from "./Description/Description";
 import { Equipements } from "./Equipements/Equipements";
 
 import { Footer } from "../Footer/Footer";
-
-// import {
-//   locations,
-//   getInvoice,
-// } from "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/location.js";
+import { locations } from "../../location";
+import { Navigate } from "react-router-dom";
 
 import { useParams } from "react-router-dom";
 
@@ -24,32 +21,36 @@ const withRouter = (WrappedComponent) => (props) => {
 };
 
 class LogementPage extends React.Component {
-  componentDidMount() {
-    // fetch tes donnees
-    //
-  }
-
   render() {
-    // if (isNotValid) {
-    //   return <Navigate to
-    // }
-
     const actualUrlId = this.props.params.locationId;
-    console.log(actualUrlId);
+    console.log(locations);
 
-    return (
-      <>
-        {/* <Header />
-        <PhotoGallery locations={this.props.location.invoiceId} />
-        <LogementMain locations={this.props.location.invoiceId} />
-        <div className="DescAndEquipment">
-          <Description locations={this.props.location.invoiceId} />
-          <Equipements locations={this.props.location.invoiceId} />
-        </div>
-        <Footer /> */}
-        <div>blbllblbl</div>
-      </>
-    );
+    let arrayId = [];
+    const singleIdValue = locations.forEach((location) => {
+      arrayId.push(location.id);
+    });
+
+    if (!arrayId.includes(actualUrlId)) {
+      return <Navigate to={"/error404"} />;
+    } else {
+      const locationIdentifierValues = locations.filter(
+        (location) => location.id === actualUrlId
+      );
+      const locationIdentified = locationIdentifierValues[0];
+
+      return (
+        <>
+          <Header />
+          <PhotoGallery locations={locationIdentified} />
+          <LogementMain locations={locationIdentified} />
+          <div className="DescAndEquipment">
+            <Description locations={locationIdentified} />
+            <Equipements locations={locationIdentified} />
+          </div>
+          <Footer />
+        </>
+      );
+    }
   }
 }
 
