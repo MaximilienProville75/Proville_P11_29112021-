@@ -10,8 +10,6 @@ import AProposPage from "./components/AProposPage/AProposPage.js";
 import ErrorPage from "./components/ErrorPage/ErrorPage.js";
 import LogementPage from "./components/LogementPage/LogementPage.js";
 
-import { LocationList } from "./components/HomePage/LocationList/LocationList.js";
-
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

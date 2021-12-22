@@ -3,7 +3,6 @@ import "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kas
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { farStar } from "@fortawesome/free-solid-svg-icons";
 
 export class LogementMain extends React.Component {
   render() {

@@ -1,7 +1,6 @@
 import React from "react";
 import "./LocationList.css";
 import Location from "./Location/Location";
-import LogementPage from "../../LogementPage/LogementPage";
 
 import { Link } from "react-router-dom";
 
