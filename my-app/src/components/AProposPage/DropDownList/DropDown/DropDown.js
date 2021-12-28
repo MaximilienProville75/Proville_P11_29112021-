@@ -15,12 +15,13 @@ class DropDown extends React.Component {
   showMenu(event) {
     event.preventDefault();
 
-    this.setState({
-      showMenu: true,
-    });
+    // this.setState({
+    //   showMenu: true,
+    // });
 
     this.setState((prevState) => ({
-      check: !prevState.check,
+      // check: !prevState.check,
+      showMenu: !prevState.showMenu,
     }));
   }
 

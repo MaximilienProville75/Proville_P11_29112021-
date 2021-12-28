@@ -4,3 +4,78 @@
     margin: auto;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 450px) {
+    .controllerS {
+      top: 204px !important;
+    }
+
+    .DropDown2 {
+        max-width: 100% !important;
+        margin-bottom: 22px;
+    }    
+
+    .DescAndEquipment {
+        flex-direction: column !important;
+    }
+
+    .Header_Ul {
+        margin-top: 15px;
+    }
+
+    .HeaderLi {
+        font-size: 22px;
+    }
+
+    .TitleLocation h1{
+        font-size: 25px;
+    }
+
+    .TitleLocation p{
+        font-size: 15px;
+    }
+
+    .HostProfil img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .HostProfil p{
+        font-size: 15px;
+        line-height: 130.6%;
+    }
+
+    .TagRating{
+        flex-direction: column;
+    }
+    
+    .StarRatings{
+        margin-top: 25px;
+    }
+
+    body{
+        width: 95%;
+    }
+
+    .Footer{
+        margin-top: 40px;
+    }
+
+    .FooterCopyright{
+        font-size: 20px;
+    }
+
+    .FooterLogo{
+        margin-left: 35%;
+    }
+
+    .HostProfil{
+        position: relative;
+        top: 225px; 
+        margin-right: -9px;
+    }
+
+    .pictureImg img {
+        height: 290px;
+    }
+  }
