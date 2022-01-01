@@ -21,10 +21,44 @@ const withRouter = (WrappedComponent) => (props) => {
 };
 
 class LogementPage extends React.Component {
-  render() {
-    const actualUrlId = this.props.params.locationId;
-    console.log(locations);
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      locationss: [],
+    };
+  }
 
+  componentDidMount() {
+    fetch(
+      "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json"
+    )
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            locationss: result.locationss,
+          });
+        },
+        // Remarque : il est important de traiter les erreurs ici
+        // au lieu d'utiliser un bloc catch(), pour ne pas passer à la trappe
+        // des exceptions provenant de réels bugs du composant.
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
+
+  render() {
+    const { error, isLoaded, locationss } = this.state;
+    console.log(locationss.title);
+
+    const actualUrlId = this.props.params.locationId;
     let arrayId = [];
     const singleIdValue = locations.forEach((location) => {
       arrayId.push(location.id);

@@ -44,7 +44,6 @@ export class PhotoGallery extends React.Component {
     const { index, disabledNext, disabledPrev } = this.state;
     const profile = arrayOfPicturesLink ? arrayOfPicturesLink[index] : null;
 
-    console.log(profile);
     return (
       <div className="pictureImg">
         <div className="controllerS">
