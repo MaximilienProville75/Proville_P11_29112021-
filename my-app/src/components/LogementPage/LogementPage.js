@@ -26,20 +26,18 @@ class LogementPage extends React.Component {
     this.state = {
       error: null,
       isLoaded: false,
-      locationss: [],
+      items: [],
     };
   }
 
   componentDidMount() {
-    fetch(
-      "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json"
-    )
+    fetch("location.json")
       .then((res) => res.json())
       .then(
         (result) => {
           this.setState({
             isLoaded: true,
-            locationss: result.locationss,
+            items: result.items,
           });
         },
         // Remarque : il est important de traiter les erreurs ici
@@ -55,14 +53,18 @@ class LogementPage extends React.Component {
   }
 
   render() {
-    const { error, isLoaded, locationss } = this.state;
-    console.log(locationss.title);
+    const { error, isLoaded, items } = this.state;
 
     const actualUrlId = this.props.params.locationId;
     let arrayId = [];
     const singleIdValue = locations.forEach((location) => {
       arrayId.push(location.id);
     });
+    const singleItem = items.map((item) => {
+      return item.title;
+    });
+
+    console.log(singleItem);
 
     if (!arrayId.includes(actualUrlId)) {
       return <Navigate to={"/error404"} />;
