@@ -40,9 +40,6 @@ class LogementPage extends React.Component {
             items: result.items,
           });
         },
-        // Remarque : il est important de traiter les erreurs ici
-        // au lieu d'utiliser un bloc catch(), pour ne pas passer à la trappe
-        // des exceptions provenant de réels bugs du composant.
         (error) => {
           this.setState({
             isLoaded: true,
@@ -60,6 +57,11 @@ class LogementPage extends React.Component {
     const singleIdValue = locations.forEach((location) => {
       arrayId.push(location.id);
     });
+
+    if (isLoaded === true) {
+      console.log("Data Loaded");
+    }
+
     const singleItem = items.map((item) => {
       return item.title;
     });
