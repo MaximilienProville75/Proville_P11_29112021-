@@ -1,15 +1,19 @@
 .BannerHero{
     max-width: 1240px;
-    max-height: 223px;
+    /* max-height: 223px; */
     margin: auto; 
     margin-top: 75px;
     margin-bottom: 30px;
 }
 
 .BannerHeroImg{
-    max-width: 1240px;
-    max-height: 223px;
+    /* max-width: 1240px;
+    max-height: 223px; */
     border-radius: 25px;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
