@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { ReactComponent as Logo } from "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/logo.svg";
+import { ReactComponent as Logo } from "../../logo.svg";
 import { Link } from "react-router-dom";
 
 export class Header extends React.Component {

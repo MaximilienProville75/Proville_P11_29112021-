@@ -34,9 +34,10 @@ export class Equipements extends React.Component {
         {this.state.showMenu ? (
           <div className="DropDownDescription2">
             <ul>
-              {this.props.locations.equipments.map((equipment) => {
-                return <li>{equipment}</li>;
-              })}
+              {/* {this.props.items.equipments.map((equipment, idx) => {
+                return <li key={idx}>{equipment}</li>;
+              })} */}
+              {this.props.children}
             </ul>
           </div>
         ) : null}

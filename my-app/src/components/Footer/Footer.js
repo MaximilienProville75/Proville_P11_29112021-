@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { ReactComponent as Logo2 } from "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/logoWhite.svg";
+import { ReactComponent as Logo2 } from "../../logoWhite.svg";
 
 import { Link } from "react-router-dom";
 

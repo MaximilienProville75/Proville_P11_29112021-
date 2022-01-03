@@ -1,5 +1,5 @@
 import React from "react";
-import "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/components/LogementPage/PhotoGallery/PhotoGallery.css";
+import "./PhotoGallery.css";
 
 import { LeftController } from "./PhotoGalleryControler/LeftController/LeftController";
 import { RightController } from "./PhotoGalleryControler/RightController/RightController";
@@ -27,7 +27,7 @@ export class PhotoGallery extends React.Component {
   }
 
   toggleNext(e) {
-    const arrayOfPicturesLink = this.props.locations.pictures;
+    const arrayOfPicturesLink = this.props.items.pictures;
     console.log(arrayOfPicturesLink);
     let index = this.state.index + 1;
     let disabledNext = index === arrayOfPicturesLink.length - 1;
@@ -40,7 +40,7 @@ export class PhotoGallery extends React.Component {
   }
 
   render() {
-    const arrayOfPicturesLink = this.props.locations.pictures;
+    const arrayOfPicturesLink = this.props.items.pictures;
     const { index, disabledNext, disabledPrev } = this.state;
     const profile = arrayOfPicturesLink ? arrayOfPicturesLink[index] : null;
 

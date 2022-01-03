@@ -5,9 +5,9 @@ import { Header } from "../Header/Header";
 import { Footer } from "../Footer/Footer";
 import { DropDownList } from "./DropDownList/DropDownList";
 
-import { informationsData } from "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/components/AProposPage/Informations.js";
+import { informationsData } from "./Informations.js";
 
-import bannerImg from "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/components/AProposPage/bannerMountain.svg";
+import bannerImg from "../../gustavo-alves-YOXSC4zRcxw-unsplash 1.jpg";
 
 class AProposPage extends React.Component {
   render() {
@@ -16,7 +16,7 @@ class AProposPage extends React.Component {
         <Header />
         <div className="BannerHero">
           <img
-            className="BannerHeroImg"
+            className="BannerHeroImgPp"
             src={bannerImg}
             alt="Kalen Emsley Mountain"
           />
