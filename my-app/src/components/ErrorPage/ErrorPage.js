@@ -2,6 +2,7 @@ import React from "react";
 
 import { Header } from "../Header/Header";
 import { Footer } from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 import "../ErrorPage/ErrorPage.css";
 
@@ -20,7 +21,9 @@ export default class ErrorPage extends React.Component {
             </div>
           </div>
           <div className="ReturnHome">
-            <p>Retourner sur la page d’accueil</p>
+            <Link to="/home">
+              <p>Retourner sur la page d’accueil</p>
+            </Link>
           </div>
         </div>
         <Footer />
