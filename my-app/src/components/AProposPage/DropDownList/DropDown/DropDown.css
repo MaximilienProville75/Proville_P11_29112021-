@@ -1,6 +1,8 @@
 .DropDown{
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 50px;
+    width: 100%;
+    margin-left: 5px;
 }
 
 .DropDownTitle{
@@ -16,7 +18,7 @@
     padding-left: 15px;
 }
 
-.DropDownTitle p{
+.DropDownTitle ul{
     margin-left: 10px;
     padding-top: 7px;
 }
@@ -30,7 +32,8 @@
     
 }
 
-.DropDownDescription p{
+.DropDownDescription ul{
     padding: 15px;
+    list-style-type: none;
     
 }

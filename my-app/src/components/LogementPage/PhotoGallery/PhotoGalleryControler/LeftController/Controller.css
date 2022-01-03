@@ -20,6 +20,10 @@ button {
     
 }
 
+.rotateArrow {
+    transform: rotate(180deg)
+}
+
 .arrow2{
     color: white;
 }

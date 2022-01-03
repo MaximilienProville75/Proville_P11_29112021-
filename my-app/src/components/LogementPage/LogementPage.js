@@ -6,11 +6,10 @@ import { Header } from "../Header/Header";
 import { PhotoGallery } from "./PhotoGallery/PhotoGallery";
 import { LogementMain } from "./LogementMain/LogementMain";
 
-import { Description } from "./Description/Description";
-import { Equipements } from "./Equipements/Equipements";
-
 import { Footer } from "../Footer/Footer";
 import { Navigate } from "react-router-dom";
+import DropDown from "../AProposPage/DropDownList/DropDown/DropDown";
+import { Tag } from "./LogementMain/Tag/Tag";
 
 import { useParams } from "react-router-dom";
 
@@ -74,12 +73,14 @@ class LogementPage extends React.Component {
           <PhotoGallery items={locationIdentified} />
           <LogementMain items={locationIdentified} />
           <div className="DescAndEquipment">
-            <Description items={locationIdentified} />
-            <Equipements>
+            <DropDown items="Description">
+              {locationIdentified.description}
+            </DropDown>
+            <DropDown items="Equipment">
               {locationIdentified.equipments.map((equipment, idx) => {
-                return <li key={idx}>{equipment}</li>;
+                <Tag key={idx} equipment={equipment} />;
               })}
-            </Equipements>
+            </DropDown>
           </div>
           <Footer />
         </>

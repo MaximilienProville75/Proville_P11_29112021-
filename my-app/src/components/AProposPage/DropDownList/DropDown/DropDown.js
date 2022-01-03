@@ -24,11 +24,11 @@ class DropDown extends React.Component {
     return (
       <div className="DropDown">
         <button className="DropDownTitle" onClick={this.showMenu}>
-          {this.props.information.title}
+          {this.props.items}
         </button>
         {this.state.showMenu ? (
           <div className="DropDownDescription">
-            <p>{this.props.information.description}</p>
+            <ul>{this.props.children}</ul>
           </div>
         ) : null}
       </div>

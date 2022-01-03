@@ -1,9 +1,9 @@
 import React from "react";
-import "/Users/maximilienproville/Desktop/FORMATION Openclassrooms/Projet_11_Kasa/my-app/src/components/LogementPage/PhotoGallery/PhotoGalleryControler/LeftController/LeftController.css";
+import "../LeftController/Controller.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
-export class LeftController extends React.Component {
+export class Controller extends React.Component {
   render() {
     return (
       <>

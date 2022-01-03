@@ -1,8 +1,7 @@
 import React from "react";
 import "./PhotoGallery.css";
 
-import { LeftController } from "./PhotoGalleryControler/LeftController/LeftController";
-import { RightController } from "./PhotoGalleryControler/RightController/RightController";
+import { Controller } from "./PhotoGalleryControler/LeftController/Controller";
 
 export class PhotoGallery extends React.Component {
   constructor(props) {
@@ -47,16 +46,19 @@ export class PhotoGallery extends React.Component {
     return (
       <div className="pictureImg">
         <div className="controllerS">
-          <LeftController
+          <Controller
             toggle={(e) => this.togglePrev(e)}
             active={disabledPrev}
           />
-          <RightController
-            toggle={(e) => this.toggleNext(e)}
-            active={disabledNext}
-          />
+          <div className="rotateArrow">
+            <Controller
+              toggle={(e) => this.toggleNext(e)}
+              active={disabledNext}
+              className="rotateArrow"
+            />
+          </div>
         </div>
-        <img src={profile} alt="blblbl" />
+        <img src={profile} alt="Gallery" />
       </div>
     );
   }
