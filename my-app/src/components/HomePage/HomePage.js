@@ -18,11 +18,10 @@ class HomePage extends React.Component {
   }
 
   componentDidMount() {
-    fetch("/location.json")
+    fetch("/logements2.json")
       .then((res) => res.json())
       .then(
         (result) => {
-          console.log(result);
           this.setState({
             isLoaded: true,
             items: result,

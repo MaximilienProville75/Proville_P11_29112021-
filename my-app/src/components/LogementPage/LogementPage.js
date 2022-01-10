@@ -29,11 +29,10 @@ class LogementPage extends React.Component {
   }
 
   componentDidMount() {
-    fetch("/location.json")
+    fetch("/logements2.json")
       .then((res) => res.json())
       .then(
         (result) => {
-          console.log(result);
           this.setState({
             isLoaded: true,
             items: result,
@@ -78,7 +77,7 @@ class LogementPage extends React.Component {
             </DropDown>
             <DropDown items="Equipment">
               {locationIdentified.equipments.map((equipment, idx) => {
-                <Tag key={idx} equipment={equipment} />;
+                return <Tag key={idx} tag={equipment} />;
               })}
             </DropDown>
           </div>

@@ -3,6 +3,7 @@ import "../LogementMain/LogementMain.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { Tag } from "./Tag/Tag";
 
 export class LogementMain extends React.Component {
   render() {
@@ -29,7 +30,7 @@ export class LogementMain extends React.Component {
           <div className="TagList">
             <ul>
               {this.props.items.tags.map((tag) => {
-                return <li>{tag}</li>;
+                return <Tag key={tag} tag={tag} />;
               })}
             </ul>
           </div>

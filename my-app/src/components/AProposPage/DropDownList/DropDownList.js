@@ -9,7 +9,7 @@ export class DropDownList extends React.Component {
         {this.props.informationsData.map((information, idx) => {
           // return <DropDown key={idx} information={information} />
           return (
-            <DropDown items={information.title}>
+            <DropDown key={information.title} items={information.title}>
               {information.description}
             </DropDown>
           );
