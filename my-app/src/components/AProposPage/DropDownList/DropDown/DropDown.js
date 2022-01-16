@@ -1,5 +1,6 @@
 import React from "react";
 import "./DropDown.css";
+import { FaAngleDown } from "react-icons/fa";
 
 class DropDown extends React.Component {
   constructor() {
@@ -23,9 +24,16 @@ class DropDown extends React.Component {
   render() {
     return (
       <div className="DropDown">
-        <button className="DropDownTitle" onClick={this.showMenu}>
-          {this.props.items}
-        </button>
+        <div className="DropDownChevron">
+          <button className="DropDownTitle" onClick={this.showMenu}>
+            {this.props.items}
+          </button>
+          {this.state.showMenu ? (
+            <FaAngleDown className="AngleDown rotation" />
+          ) : (
+            <FaAngleDown className="AngleDown" />
+          )}
+        </div>
         {this.state.showMenu ? (
           <div className="DropDownDescription">
             <ul>{this.props.children}</ul>

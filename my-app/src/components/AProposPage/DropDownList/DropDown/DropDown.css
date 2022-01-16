@@ -37,3 +37,18 @@
     list-style-type: none;
     
 }
+
+.DropDownChevron{
+    display: flex;
+}
+
+.AngleDown{
+    color: white;
+    position: relative;
+    right: 25px;
+    top: 1px;
+    height: 30px;
+}
+.rotation{
+    rotate: 180deg;
+}
